@@ -51,7 +51,7 @@ PHP Version 7.2.22
 
 Configuration File PATH: /usr/local/etc/php/7.2/php.ini
 
-#PhpStorm
+# PhpStorm
 Идеальная среда разработки для работы и соединения всех этих компонентов в единное целое
 
  
