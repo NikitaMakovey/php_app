@@ -4,7 +4,8 @@
 
 Все инструменты были установленны посредством утилиты Homebrew и Xcode Command Line Tools на MacOS Mojave (10.14.6)
 # NGINX
-
+Идеальный HTTP-сервер, в отличии от всем известного и уже устаревшего Apache - быстрый и экономный в потреблении ресурсов, и это не единственные особенности этого сервера.
+ 
 Configuration location: /usr/local/etc/nginx/nginx.conf
 
 Configuration:
