@@ -1,27 +1,33 @@
 <?php
+    $db_host    = "localhost";
+    $db_user    = "root";
+    $db_pass    = "root";
+    $connection = new mysqli($db_host, $db_user, $db_pass);
 
-use App\Kernel;
-use Symfony\Component\Debug\Debug;
-use Symfony\Component\HttpFoundation\Request;
+    if ($connection->connect_error) {
+        die("Database connection failed!" .
+            "(" . mysqli_connect_errno() . ")"
+        );
+    }
 
-require dirname(__DIR__).'/config/bootstrap.php';
+    $db_name = "test";
+    $query = "CREATE SCHEMA IF NOT EXISTS " . $db_name;
 
-if ($_SERVER['APP_DEBUG']) {
-    umask(0000);
+    if ($connection->query($query) !== TRUE) {
+        die($connection->error);
+    }
 
-    Debug::enable();
-}
+    $connection->connect($db_host, $db_user, $db_pass, $db_name);
 
-if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? $_ENV['TRUSTED_PROXIES'] ?? false) {
-    Request::setTrustedProxies(explode(',', $trustedProxies), Request::HEADER_X_FORWARDED_ALL ^ Request::HEADER_X_FORWARDED_HOST);
-}
+    $db_table = "users";
+    $query = "CREATE TABLE IF NOT EXISTS " . $db_table . " (
+                    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+                    username VARCHAR(30) NOT NULL,
+                    password VARCHAR(30) NOT NULL
+            ) DEFAULT CHARSET=utf8";
 
-if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? $_ENV['TRUSTED_HOSTS'] ?? false) {
-    Request::setTrustedHosts([$trustedHosts]);
-}
-
-$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
-$request = Request::createFromGlobals();
-$response = $kernel->handle($request);
-$response->send();
-$kernel->terminate($request, $response);
+    if ($connection->query($query) !== TRUE) {
+        die($connection->error);
+    } else {
+        echo "<h1 style=\"font-family: sans-serif; font-size: 60px; color: rgba(180, 100, 207, 0.7); text-align: center\">Have done!</h1>";
+    }
