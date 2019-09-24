@@ -26,7 +26,7 @@ Configuration:
         keepalive_timeout  65;
     
         server {
-        	listen       5000;
+        	listen       80;
         	server_name  localhost;
         	client_max_body_size 20M;
         	root   /Users/{user}/Sites/{project};
@@ -40,6 +40,15 @@ Configuration:
             	include        fastcgi_params;
         	}
     }
+
+Для пользователей MacOS:
+
+По умолчанию на http://localhost находится стандартная страница Apache или же любая другая страница, которую вы когда-либо создавали. 
+Чтобы от этого избавиться и сохранить право главного порта за NGINX, нужно выполнить команду 
+    
+    sudo apachectl stop
+    # или
+    sudo apachectl -k stop
 
 # MySQL
 СУБД была установлена с помощью Homebrew и был скачен инструмент для взаимодействия с базами данных и проверкой подключения - MySQL Workbench
