@@ -30,6 +30,7 @@
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

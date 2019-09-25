@@ -84,6 +84,27 @@ class Database
     }
 
     /**
+     * @var string
+     */
+    private $db_table = "vladivostok";
+
+    /**
+     * @return string
+     */
+    public function getDbTable(): string
+    {
+        return $this->db_table;
+    }
+
+    /**
+     * @param string $db_table
+     */
+    public function setDbTable(string $db_table): void
+    {
+        $this->db_table = $db_table;
+    }
+
+    /**
      * Database constructor.
      * @param $db_table
      */
@@ -96,14 +117,31 @@ class Database
                   title VARCHAR(300) NOT NULL,
                   link VARCHAR(300) NOT NULL,
                   src_image VARCHAR(300) NOT NULL,
-                  validity_text VARCHAR(100) NOT NULL,
-                  validity_length INT NOT NULL,
-                  end_sale_date TIMESTAMP NOT NULL
+                  validity_text VARCHAR(100) NULL,
+                  validity_length INT NULL,
+                  end_sale_date TIMESTAMP NULL
                   ) DEFAULT CHARSET=utf8";
         if ($connection->query($query) !== TRUE)
         {
-            die("BAD CONNECTION WITH TABLE $db_table FROM {$this->getDbName()}".$connection->error);
+            die("BAD CONNECTION WITH TABLE $db_table FROM {$this->getDbName()} ".$connection->error);
         }
+        $this->setDbTable($db_table);
+    }
+
+    /**
+     * @var string
+     */
+    private $query;
+
+    /**
+     * @param string $query
+     * @return bool
+     */
+    public function setQuery(string $query): bool
+    {
+        $connection = $this->connection;
+        if ($connection->query($query) !== TRUE)
+            return false;
     }
 
 }

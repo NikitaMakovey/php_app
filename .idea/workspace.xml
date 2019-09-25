@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8be18b-44c0-4415-a3c7-5d9e4d1eba85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/symfony/src/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/src/CouponParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12ae51ea-3c14-4250-821d-0fa2de080e07.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12ae51ea-3c14-4250-821d-0fa2de080e07/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12ae51ea-3c14-4250-821d-0fa2de080e07/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f2c35cd7-6089-4084-9c8a-c6c87e6829b1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/src/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +88,7 @@
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
   <component name="ProjectId" id="1R8MJZCFxYWNpEwinexvkzK72oJ" />
@@ -110,7 +107,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -132,6 +129,7 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
+        <option name="contentProportion" value="0.12324235" />
         <treeState>
           <expand>
             <path>
@@ -160,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569044198785</updated>
       <workItem from="1569044200109" duration="14557000" />
-      <workItem from="1569328650312" duration="5916000" />
+      <workItem from="1569328650312" duration="17749000" />
     </task>
     <servers />
   </component>
