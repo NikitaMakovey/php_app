@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8be18b-44c0-4415-a3c7-5d9e4d1eba85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/symfony/src/CouponParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/src/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569044198785</updated>
       <workItem from="1569044200109" duration="14557000" />
-      <workItem from="1569328650312" duration="17749000" />
+      <workItem from="1569328650312" duration="18564000" />
     </task>
     <servers />
   </component>
