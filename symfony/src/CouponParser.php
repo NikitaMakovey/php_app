@@ -4,7 +4,6 @@
 namespace App;
 
 use Symfony\Component\DomCrawler\Crawler;
-use App\Database;
 use DateTime;
 
 class CouponParser
@@ -20,19 +19,20 @@ class CouponParser
     );
 
     const MONTH_PARAMS = array(
-        "янв." => "01",
-        "фев." => "02",
-        "мар." => "03",
-        "апр." => "04",
-        "май" => "05",
-        "июн." => "06",
-        "июл." => "07",
-        "авг." => "08",
+        "янв."  => "01",
+        "фев."  => "02",
+        "мар."  => "03",
+        "апр."  => "04",
+        "май"   => "05",
+        "июн."  => "06",
+        "июл."  => "07",
+        "авг."  => "08",
         "сент." => "09",
-        "окт." => "10",
+        "окт."  => "10",
         "нояб." => "11",
-        "дек." => "12",
+        "дек."  => "12",
     );
+
     /**
      * @var string
      */
@@ -81,18 +81,42 @@ class CouponParser
     private $db;
 
     /**
+     * @return Database
+     */
+    public function getDb(): Database
+    {
+        return $this->db;
+    }
+
+    /**
+     * @param Database $db
+     */
+    public function setDb(Database $db): void
+    {
+        $this->db = $db;
+    }
+
+    /**
      * CouponParser constructor.
      * @param $city
      */
     public function __construct($city)
     {
-        if ($city !== "vladivostok")
-        {
-            $city = lcfirst($city);
-            $this->setCity($city);
-        }
-        $this->db = new Database($this->getCity());
+        $city = lcfirst($city);
+        $this->setCity($city);
+        $db = new Database($this->getCity());
+        $this->setDb($db);
         $this->setLink($city);
+    }
+
+    /**
+     * @param $data
+     */
+    public function console_log($data)
+    {
+        echo '<script>';
+        echo 'console.log('. json_encode($data) .')';
+        echo '</script>';
     }
 
     /**
@@ -108,7 +132,7 @@ class CouponParser
         $year_after     = date("Y");
         $month_before   = self::MONTH_PARAMS[$matches[0][1]];
         $month_after    = self::MONTH_PARAMS[$matches[0][3]];
-        if ($month_after < $month_before)
+        if (intval($month_after) < intval($month_before))
         {
             $year_after++;
         }
@@ -127,7 +151,7 @@ class CouponParser
             die("DATETIME ERROR ($e)");
         }
         $validity_length
-            = $date_1->diff($date_2)->d;
+            = $date_1->diff($date_2)->days;
         return $validity_length;
     }
 
@@ -174,14 +198,14 @@ class CouponParser
 
         $crawler->filterXPath(self::COUPON_PARAMS["param__root_path"])->each(function (Crawler $node, $i)
         {
-            echo $column__title
+            $column__title
                 = trim($node->filterXPath(self::COUPON_PARAMS["param__title"])->text());
-            echo $column__link
+            $column__link
                 = "https://{$this->getCity()}.lovikupon.ru".$node->filterXPath(self::COUPON_PARAMS["param__link"])->text();
-            echo $column__src_image
+            $column__src_image
                 = $node->filterXPath(self::COUPON_PARAMS["param__image"])->text();
-            $column__validity_text = $column__validity_length = $column__end_sale_date = null;
-            if ($node->filterXPath(self::COUPON_PARAMS["param__validity"])->text() !== null)
+
+            if (!is_null($node->filterXPath(self::COUPON_PARAMS["param__validity"])->text()))
             {
                 $column__validity_text
                     = trim(preg_replace("/\s{2,}/", " ", $node->filterXPath(self::COUPON_PARAMS["param__validity"])->text()));
@@ -191,29 +215,40 @@ class CouponParser
                     = trim(preg_replace("/\s{2,}/", " ", $node->filterXPath(self::COUPON_PARAMS["param__end_sale"])->text()));
                 $column__end_sale_date
                     = $this->getEndSaleDate($column__end_sale_date);
-            }
 
-            $query = "UPDATE {$this->db->getDbTable()} 
-                      SET end_sale_date={$column__end_sale_date}
-                      WHERE title={$column__title}";
-            if ($this->db->setQuery($query) !== TRUE)
-            {
-                $query = "INSERT INTO {$this->db->getDbTable()} 
-                    (`title`, `link`, `src_image`, `validity_text`, `validity_length`, `end_sale_date`)
-                    VALUES (
-                    `$column__title`, 
-                    `$column__link`, 
-                    `$column__src_image`, 
-                    `$column__validity_text`, 
-                    `$column__validity_length`, 
-                    `$column__end_sale_date`
-                    )";
-                $this->db->setQuery($query);
+                $db = $this->getDb();
+                $connection = new \mysqli($db->getDbHost(), $db->getDbUser(), $db->getDbPass(), $db->getDbName());
+                $query = "SELECT * FROM `".$db->getDbTable()."` WHERE `title` = '".$column__title."' AND `id` > 0";
+                $result = $connection->query($query);
+                $row = $result->fetch_assoc();
+                $result->free_result();
+                if ($row)
+                {
+                    $query =
+                        "UPDATE `".$this->db->getDbTable()."` 
+                        SET `end_sale_date` = '".$column__end_sale_date."' 
+                        WHERE `title` = '".$column__title."'";
+                    if ($connection->query($query) !== TRUE)
+                        die($connection->error);
+                } else {
+                    $query =
+                        "INSERT INTO `".$this->db->getDbTable()."` 
+                        (`title`, `link`, `src_image`, `validity_text`, `validity_length`, `end_sale_date`)
+                        VALUES (
+                        '$column__title', 
+                        '$column__link', 
+                        '$column__src_image', 
+                        '$column__validity_text', 
+                        '$column__validity_length', 
+                        '$column__end_sale_date'
+                        )";
+                    if ($connection->query($query) !== TRUE)
+                        die($connection->error);
+                }
             }
         });
         $count_coupons = $this->getCountCoupons($crawler);
         return $count_coupons;
     }
-
 
 }

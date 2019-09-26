@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8be18b-44c0-4415-a3c7-5d9e4d1eba85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/symfony/public/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/src/CouponParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/CouponParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/src/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/Database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +53,7 @@
   </component>
   <component name="PhpServers">
     <servers>
-      <server host="localhost" id="109293ee-95af-402e-9dbb-9486c32b8559" name="localhost" port="5000" />
+      <server host="localhost" id="109293ee-95af-402e-9dbb-9486c32b8559" name="localhost" />
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1">
@@ -100,7 +105,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569044198785</updated>
       <workItem from="1569044200109" duration="14557000" />
-      <workItem from="1569328650312" duration="18564000" />
+      <workItem from="1569328650312" duration="31814000" />
     </task>
     <servers />
   </component>

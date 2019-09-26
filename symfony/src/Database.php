@@ -58,7 +58,7 @@ class Database
     }
 
     /**
-     * @var mixed
+     * @var \mysqli
      */
     private $connection;
 
@@ -78,9 +78,17 @@ class Database
         $query = "CREATE SCHEMA IF NOT EXISTS ".$name;
         if ($connection->query($query) === TRUE)
         {
+            $connection->connect($host, $user, $pass, $name);
             $this->connection = $connection;
-            $this->connection->connect($host, $user, $pass, $name);
         }
+    }
+
+    /**
+     * @return \mysqli
+     */
+    public function getConnection(): \mysqli
+    {
+        return $this->connection;
     }
 
     /**
@@ -111,37 +119,22 @@ class Database
     public function __construct($db_table)
     {
         $this->setConnection($this->getDbHost(), $this->getDbUser(), $this->getDbPass(), $this->getDbName());
-        $connection = $this->connection;
+        $connection = $this->getConnection();
         $query = "CREATE TABLE IF NOT EXISTS ".$db_table." (
                   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
                   title VARCHAR(300) NOT NULL,
                   link VARCHAR(300) NOT NULL,
                   src_image VARCHAR(300) NOT NULL,
-                  validity_text VARCHAR(100) NULL,
-                  validity_length INT NULL,
-                  end_sale_date TIMESTAMP NULL
+                  validity_text VARCHAR(100) NOT NULL,
+                  validity_length INT NOT NULL,
+                  end_sale_date TIMESTAMP NOT NULL
                   ) DEFAULT CHARSET=utf8";
         if ($connection->query($query) !== TRUE)
         {
             die("BAD CONNECTION WITH TABLE $db_table FROM {$this->getDbName()} ".$connection->error);
         }
         $this->setDbTable($db_table);
-    }
-
-    /**
-     * @var string
-     */
-    private $query;
-
-    /**
-     * @param string $query
-     * @return bool
-     */
-    public function setQuery(string $query): bool
-    {
-        $connection = $this->connection;
-        if ($connection->query($query) !== TRUE)
-            return false;
+        $connection->close();
     }
 
 }
