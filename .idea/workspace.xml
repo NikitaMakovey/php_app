@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8be18b-44c0-4415-a3c7-5d9e4d1eba85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/symfony/public/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58c7049d-e712-417e-8e02-a6bb073304d5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/src/CouponParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/CouponParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/src/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/src/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569044198785</updated>
       <workItem from="1569044200109" duration="14557000" />
-      <workItem from="1569328650312" duration="31814000" />
+      <workItem from="1569328650312" duration="32615000" />
     </task>
     <servers />
   </component>

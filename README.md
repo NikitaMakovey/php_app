@@ -29,14 +29,14 @@ Configuration:
         	listen       80;
         	server_name  localhost;
         	client_max_body_size 20M;
-        	root   /Users/{user}/Sites/{project};
+        	root   /Users/{user}/Sites/{project}/symfony/public;
         	location / {
             	index  index.php index.html index.htm;
         	}
         	location ~ \.php$ {
             	fastcgi_pass   127.0.0.1:9000;
             	fastcgi_index  index.php;
-            	fastcgi_param  SCRIPT_FILENAME /Users/{user}/Sites/{project}/$fastcgi_script_name;
+            	fastcgi_param  SCRIPT_FILENAME /Users/{user}/Sites/{project}/symfony/public/$fastcgi_script_name;
             	include        fastcgi_params;
         	}
     }
@@ -63,4 +63,10 @@ Configuration File PATH: /usr/local/etc/php/7.2/php.ini
 # PhpStorm
 Идеальная среда разработки для работы и соединения всех этих компонентов в единное целое
 
- 
+# Symfony
+
+Install symfony like this:
+    
+    cd project_folder/
+    symfony check:requirements
+    composer create-project symfony/skeleton symfony 
