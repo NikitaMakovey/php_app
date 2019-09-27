@@ -2,14 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e8be18b-44c0-4415-a3c7-5d9e4d1eba85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony/public/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony/src/CouponParserPostgres.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony/src/DatabasePostgres.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/config/packages/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/config/routes/annotations.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/src/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/src/Migrations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/src/Repository/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getAnnotations_CacheService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getAnnotations_CacheWarmerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getAnnotations_CachedReaderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getAnnotations_ReaderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCacheClearerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCacheWarmerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_AnnotationsService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_AppClearerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_AppService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_GlobalClearerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_SystemClearerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getCache_SystemService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_CommandLoaderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_AboutService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_AssetsInstallService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CacheClearService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CachePoolClearService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CachePoolDeleteService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CachePoolListService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CachePoolPruneService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_CacheWarmupService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_ConfigDebugService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_ConfigDumpReferenceService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_ContainerDebugService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_DebugAutowiringService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_EventDispatcherDebugService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineCache_ContainsCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineCache_DeleteCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineCache_FlushCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineCache_StatsCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_DiffCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_DumpSchemaCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_ExecuteCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_GenerateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_LatestCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_MigrateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_RollupCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_StatusCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_UpToDateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_PublicAlias_DoctrineMigrations_VersionCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_RouterDebugService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_RouterMatchService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_Command_YamlLintService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getConsole_ErrorListenerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_DefaultService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_NotTaggedControllerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_RequestAttributeService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_RequestService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_ServiceService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_SessionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDebug_ArgumentResolver_VariadicService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrineService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_CacheClearMetadataCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_CacheClearQueryCacheCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_CacheClearResultCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_CacheCollectionRegionCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_ClearEntityRegionCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_ClearQueryRegionCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_DatabaseCreateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_DatabaseDropCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_DatabaseImportCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_Dbal_DefaultConnectionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_EnsureProductionSettingsCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_GenerateEntitiesCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_MappingConvertCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_MappingImportCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_MappingInfoCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_Orm_DefaultEntityManagerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_Orm_ProxyCacheWarmerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_QueryDqlCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_QuerySqlCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_SchemaCreateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_SchemaDropCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_SchemaUpdateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getDoctrine_SchemaValidateCommandService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getFilesystemService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getRedirectControllerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getRouter_CacheWarmerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getRouting_LoaderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getServicesResetterService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getSessionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getSession_Storage_NativeService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/getTemplateControllerService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/removed-ids.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/Container9BvkodD/srcApp_KernelDevDebugContainer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/var/cache/dev/annotations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/vendor/bin/doctrine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/vendor/bin/doctrine-dbal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symfony/vendor/bin/doctrine-migrations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/.env" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht.legacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getArgumentResolver_ServiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCacheClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCache_AppClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCache_AppService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCache_GlobalClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCache_SystemClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getCache_SystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_CommandLoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_AboutService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CacheClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CachePoolDeleteService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CachePoolListService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_RouterDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_RouterMatchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_Command_YamlLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getConsole_ErrorListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getFilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getRedirectControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getRouter_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getRouting_LoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getServicesResetterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getSessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getSession_Storage_NativeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/getTemplateControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerAj1ixht/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getArgumentResolver_ServiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCacheClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCache_AppClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCache_AppService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCache_GlobalClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCache_SystemClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getCache_SystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_CommandLoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_AboutService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CacheClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CachePoolDeleteService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CachePoolListService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_RouterDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_RouterMatchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_Command_YamlLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getConsole_ErrorListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getFilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getRedirectControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getRouter_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getRouting_LoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getServicesResetterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getSessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getSession_Storage_NativeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/getTemplateControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/ContainerKkG1ubl/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/UrlGenerator.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/UrlGenerator.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/UrlMatcher.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/UrlMatcher.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +205,7 @@
   <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/symfony/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="DatabaseView">
@@ -123,6 +308,32 @@
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/symfony/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/symfony/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/symfony/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/symfony/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/maker-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1R8MJZCFxYWNpEwinexvkzK72oJ" />
@@ -202,7 +413,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569044198785</updated>
       <workItem from="1569044200109" duration="14557000" />
-      <workItem from="1569328650312" duration="38639000" />
+      <workItem from="1569328650312" duration="39242000" />
     </task>
     <servers />
   </component>

@@ -5,17 +5,21 @@
         "php": "^7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-json": "*",
         "ext-mysqli": "*",
+        "ext-pgsql": "*",
+        "doctrine/doctrine-bundle": "^1.11",
+        "doctrine/orm": "^2.6",
         "symfony/console": "4.3.*",
         "symfony/dom-crawler": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "4.3.*",
-        "symfony/yaml": "4.3.*",
-      "ext-json": "*",
-        "ext-pgsql": "*"
+        "symfony/orm-pack": "^1.0",
+        "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.13"
     },
     "config": {
         "preferred-install": {
