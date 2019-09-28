@@ -57,6 +57,36 @@
       <path value="$PROJECT_DIR$/symfony/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/symfony/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/symfony/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/symfony/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/symfony/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/symfony/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/symfony/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/symfony/vendor/sebastian/comparator" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

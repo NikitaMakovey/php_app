@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerApPfDuB\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'ApPfDuB',
-    'container.build_id' => 'c24d2a23',
-    'container.build_time' => 1569549936,
+    'container.build_id' => 'fefa2284',
+    'container.build_time' => 1569679170,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerApPfDuB');
