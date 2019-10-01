@@ -70,3 +70,8 @@ Install symfony like this:
     cd project_folder/
     symfony check:requirements
     composer create-project symfony/skeleton symfony 
+
+# Doctrine ORM
+
+# PHPUnit
+

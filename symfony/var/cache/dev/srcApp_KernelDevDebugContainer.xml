@@ -210,6 +210,30 @@
     <service id="App\CouponParserPostgres" class="App\CouponParserPostgres" autowire="true" autoconfigure="true"/>
     <service id="App\Database" class="App\Database" autowire="true" autoconfigure="true"/>
     <service id="App\DatabasePostgres" class="App\DatabasePostgres" autowire="true" autoconfigure="true"/>
+    <service id="App\Repository\ArtemRepository" class="App\Repository\ArtemRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\CityRepository" class="App\Repository\CityRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\HabarovskRepository" class="App\Repository\HabarovskRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\NahodkaRepository" class="App\Repository\NahodkaRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\UssuriyskRepository" class="App\Repository\UssuriyskRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\VladivostokRepository" class="App\Repository\VladivostokRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -1264,7 +1288,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.9_yeNH1"/>
+      <argument type="service" id=".service_locator.haGBTCF"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -1617,6 +1641,18 @@
       <tag name="maker.command"/>
       <argument>/Users/makovey/Sites/app/symfony</argument>
     </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\ArtemRepository" class="App\Repository\ArtemRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\ArtemRepository" class="App\Repository\ArtemRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CityRepository" class="App\Repository\CityRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\CityRepository" class="App\Repository\CityRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\HabarovskRepository" class="App\Repository\HabarovskRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\HabarovskRepository" class="App\Repository\HabarovskRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NahodkaRepository" class="App\Repository\NahodkaRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\NahodkaRepository" class="App\Repository\NahodkaRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UssuriyskRepository" class="App\Repository\UssuriyskRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\UssuriyskRepository" class="App\Repository\UssuriyskRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\VladivostokRepository" class="App\Repository\VladivostokRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\VladivostokRepository" class="App\Repository\VladivostokRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand" public="false">
       <tag name="console.command" command="make:auth"/>
       <argument type="service" id="maker.maker.make_authenticator"/>
@@ -1828,6 +1864,17 @@
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
+      </argument>
+    </service>
+    <service id=".service_locator.haGBTCF" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Repository\ArtemRepository" type="service" id="App\Repository\ArtemRepository"/>
+        <argument key="App\Repository\CityRepository" type="service" id="App\Repository\CityRepository"/>
+        <argument key="App\Repository\HabarovskRepository" type="service" id="App\Repository\HabarovskRepository"/>
+        <argument key="App\Repository\NahodkaRepository" type="service" id="App\Repository\NahodkaRepository"/>
+        <argument key="App\Repository\UssuriyskRepository" type="service" id="App\Repository\UssuriyskRepository"/>
+        <argument key="App\Repository\VladivostokRepository" type="service" id="App\Repository\VladivostokRepository"/>
       </argument>
     </service>
     <service id="logger" class="Symfony\Component\HttpKernel\Log\Logger" public="false"/>
