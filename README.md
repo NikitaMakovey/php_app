@@ -73,5 +73,26 @@ Install symfony like this:
 
 # Doctrine ORM
 
+Action for installing and setting:
+    
+    composer require doctrine
+    
+    # into .env: DATABASE_URL=mysql://user:password@127.0.0.1:3306/lovikupon
+    
+    ./bin/console doctrine:database:create
+    
+    # create all tables into database like this:
+    
+    ./bin/console make:entity
+    
+    # make migration:
+    
+    ./bin/console make:migration
+    ./bin/console doctrine:migrations:migrate
+    
+    #check migrations status
+
+    ./bin/console doctrine:migrations:migrate
+    
 # PHPUnit
 
